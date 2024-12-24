@@ -86,17 +86,22 @@ const variable3 = 45;
 
             console.log('array **', arrrraayyyy, poppedEl, shiftedEl);
 
-                 
             
         // Function
-            function fun1() {
+            function fun1(param1, param2, param3, param4, param5, param6, param7) {
                 const test = 'test'
+                console.log('fun1***********', param1, param2, param3, param4, param5, param6, param7);
+                return test
             }
+            console.log('test**', fun1('glob', 1, true, undefined, {}, [], false));
+            
             // Arrow function
-            const test = () => {
-                // console.log('test***********');
+            const test111 = () => {
+                console.log('test111***********');
+                return 123434
             }
-            test()
+            const testVar = test111()
+            console.log(testVar)
             // callBack function
             // asynchronous function
         // NaN

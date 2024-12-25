@@ -75,14 +75,23 @@ console.log("variable3**", variable3);
             //     1, 4, 7, 5, 6, 4, 8, 7, 5, 4, 3 
             // ]
         // Function
-            function fun1() {
+            function fun1(param1, param2, param3, param4, param5, param6, param7, param8) {
                 const test = 'test'
+                console.log('fun1***********', param1, param2, param3, param4, param5, param6, param7, param8());
+                
+                return newFunc(param8)
             }
+            // callback hell
+
+            const newFunc = (param8) => { return param8()}
+            
             // Arrow function
             const test = () => {
                 console.log('test***********');
             }
-            test()
+            console.log('test**', fun1('glob', 1, true, undefined, {}, [], false, test111));
+            // const testVar = test111()
+            // console.log(testVar)
             // callBack function
             // asynchronous function
         // NaN

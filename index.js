@@ -84,13 +84,13 @@ const variable3 = 45;
              arrrraayyyy.unshift(555)
 
 
-            console.log('array **', arrrraayyyy, poppedEl, shiftedEl);
+            // console.log('array **', arrrraayyyy, poppedEl, shiftedEl);
 
             
         // Function
             function fun1(param1, param2, param3, param4, param5, param6, param7, param8) {
                 const test = 'test'
-                console.log('fun1***********', param1, param2, param3, param4, param5, param6, param7, param8());
+                // console.log('fun1***********', param1, param2, param3, param4, param5, param6, param7, param8());
                 
                 return newFunc(param8)
             }
@@ -100,12 +100,56 @@ const variable3 = 45;
             
             // Arrow function
             const test111 = () => {
-                console.log('test111***********');
+                // console.log('test111***********');
                 return 123434
             }
-            console.log('test**', fun1('glob', 1, true, undefined, {}, [], false, test111));
+            // console.log('test**', fun1('glob', 1, true, undefined, {}, [], false, test111));
             // const testVar = test111()
             // console.log(testVar)
             // callBack function
             // asynchronous function
         // NaN
+
+
+        const students = [
+            {
+                name: 'Raj',
+                Age: 22
+            },
+            {
+                name: 'Prem',
+                Age: 18
+            },
+            {
+                name: 'Hinali',
+                Age: 21
+            },
+            {
+                name: 'Parthiv',
+                Age: 21
+            },
+            {
+                name: 'Prince',
+                Age: 19
+            },
+            {
+                name: 'Manasvi',
+                Age: 21
+            },
+            {
+                name: 'Meet',
+                Age: 23
+            },
+            ]
+
+            // { name: [.....] }
+            const ageSum = students.reduce((accumulator, currentValue) => {
+                console.log('accumulator', accumulator , 'currentValue', currentValue);
+                // const sumOfAge = accumulator + currentValue.Age
+                let names = accumulator.name || []
+                names.push(currentValue.name)
+                return { name: names }
+            }, { name: [] })
+
+            console.log('ageSum**', ageSum);
+ 

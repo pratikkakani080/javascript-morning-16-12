@@ -144,12 +144,27 @@ const variable3 = 45;
 
             // { name: [.....] }
             const ageSum = students.reduce((accumulator, currentValue) => {
-                console.log('accumulator', accumulator , 'currentValue', currentValue);
+                // console.log('accumulator', accumulator , 'currentValue', currentValue);
                 // const sumOfAge = accumulator + currentValue.Age
-                let names = accumulator.name || []
+                let names = accumulator.name
                 names.push(currentValue.name)
                 return { name: names }
             }, { name: [] })
 
-            console.log('ageSum**', ageSum);
+            let newNamesArr = []            
+            students.forEach(({name, Age}) => {
+                newNamesArr = [...newNamesArr, name]
+            })
+
+            const testarr = [1, 3, 4, 6 ,7]
+            const [count1, count2, count3, count4, count5] = testarr
+            // console.log('ageSum**', ageSum, {name: newNamesArr}, count1, count2, count3, count4, count5);
  
+
+            // Spread operator
+            // ...
+            let strrrr = ['test']
+            
+            // Object ==> Short hand property
+            const raj = ['teststtstestgsdf']
+            console.log({ raj })

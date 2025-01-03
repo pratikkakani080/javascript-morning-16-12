@@ -35,3 +35,17 @@ for (let element of Arrrrrrrr) {
     console.log(element);
     
 }
+
+
+
+const checkIndex = (string) => {
+    const alphabets = 'abcdefghijklmnopqrstuvwxyz'
+    const splittedAlphabets = alphabets.split('')
+    return string.toLowerCase().split('').map(el => {
+        return (
+            splittedAlphabets.indexOf(el) + 1
+        )
+    }).join(' ')
+}
+
+console.log(checkIndex('partHiv'));

@@ -41,7 +41,15 @@ for (let element of Arrrrrrrr) {
 const checkIndex = (string) => {
     const alphabets = 'abcdefghijklmnopqrstuvwxyz'
     const splittedAlphabets = alphabets.split('')
-    return string.toLowerCase().split('').map(el => {
+    const lowerStr = string.toLowerCase()
+    console.log('lowerStr*', lowerStr);
+    const splitStr = lowerStr.split('')
+    console.log('spliyStr**', splitStr);
+    console.log('splittedAlphabets**', splittedAlphabets);
+    console.log('mapp**', splitStr.map(el=>splittedAlphabets.indexOf(el) + 1));
+
+    return splitStr.map(el => {
+        console.log('splittedAlphabets.indexOf(el)**', splittedAlphabets.indexOf(el)); 
         return (
             splittedAlphabets.indexOf(el) + 1
         )

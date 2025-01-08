@@ -14,3 +14,18 @@ const filterCP = checkPalindrome.filter(el => {
 })
 
 console.log('filterCP**', filterCP);
+
+
+const sortingOdd = (arr) => {
+    let n = 0
+    return arr.map((el, i, arrrr) => {
+        if (el % 2 === 0) {
+            return el
+        } else {
+            const newArr = arrrr.filter(el => el % 2 !== 0).sort((a, b) => a - b)
+            return newArr[n++]
+        }
+    })
+}
+
+console.log(sortingOdd([3, 1, 5, 4, 8, 9, 3]));

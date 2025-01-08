@@ -7,16 +7,30 @@
 
 <body>
 
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <h1 id="h1tag" class="temp-class">This is a Heading</h1>
+    <p class="temp-class" onclick="test()">This is a paragraph.</p>
+    <input type="text" onchange="test(event)"/>
+    <button onclick="submit()">Click me</button>
     <script>
+        function test(e) {
+            console.log('testing', e);
+            
+        }
+        function submit() {
+            console.log('submittefd')
+            
+            
+const h1El = document.getElementById('h1tag')
+h1El.innerText = 'Raj'
+        }
         // console.log('this is inline scripting   *****');
 
     </script>
     <!-- <script src="./index.js"></script> -->
     <!-- <script src="./conditionalStmnt.js"></script> -->
     <!-- <script src="./loopingStmnt.js"></script> -->
-    <script src="./logicalStmnt.js"></script>
+    <!-- <script src="./logicalStmnt.js"></script> -->
+    <script src="./DOMManipulation.js"></script>
 
 </body>
 

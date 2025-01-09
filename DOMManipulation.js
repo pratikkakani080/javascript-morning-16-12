@@ -16,3 +16,11 @@ ddd.removeEventListener('mouseover', () => {
     console.log('event is removed from H1 el');
 
 })
+
+
+const arr = [3, 7, 1, 5, 4, 1, 9]
+const checkLowest = (data) => {
+
+}
+
+console.log(checkLowest(arr))

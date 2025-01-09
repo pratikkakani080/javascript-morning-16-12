@@ -14,7 +14,11 @@
     <script>
         function test(e) {
             console.log('testing', e);
+            const pEls = document.getElementsByClassName('temp-class')
+            console.log(pEls);
             
+            pEls[1].innerText = 'this text has been changed'
+            pEls[0].style.backgroundColor = 'red'
         }
         function submit() {
             console.log('submittefd')

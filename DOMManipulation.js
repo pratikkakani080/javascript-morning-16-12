@@ -23,4 +23,19 @@ const checkLowest = (data) => {
 
 }
 
-console.log(checkLowest(arr))
+// console.log(checkLowest(arr))
+
+// const newDivEl = document.createElement('div')
+// const newPEl = document.createElement('p')
+// newPEl.createTextNode('testdsd')
+// newPEl.innerText = 'test'
+// newDivEl.appendChild(newPEl)
+// document.body.appendChild(newDivEl)
+// console.log('newDivEl*', newDivEl);
+
+console.log(window);
+
+
+
+
+
